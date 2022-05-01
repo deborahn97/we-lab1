@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+        body {
+            max-width: 1024px;
+            margin: auto;
+            background-image: url(img/bg.jpg);
+            background-size: cover;
+            background: indigo;
+        }
+
+        img {
+            border: 3px solid #DDD;
+            border-radius: 5px;
+            filter: drop-shadow(10px 10px 10px grey);
+        }
+
+        .contact:hover {
+            cursor: pointer;
+            color: #AA62FF;
+        }
+
+        #top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 15px;
+            border: none;
+            background-color: #CF9FFF;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 3px 3px;
+        }
+
+        #top:hover {
+            background-color: violet;
+        }
+    </style>
+    <title>My Resume</title>
+</head>
+
+<body>
+    <div class="w3-card w3-padding-large w3-container w3-row" style="background-color: white; margin: 0px 100px;">
+        <!-- Header -->
+        <header class="w3-row" style="min-height: 15em; display: flex; align-items: center;">
+            <div class="w3-padding w3-center w3-col s6">
+                <img src="img/photo.jpg" alt="My Photo" width="45%" height="45%" />
+            </div>
+            <div class="w3-col s6">
+                <div class="w3-row" style="word-break: keep-all">
+                    <h2 class="w3-text-deep-purple"><b>DEBORAH NAZARENA</b></h2>
+                    <h3>Full Stack Developer</h3>
+                </div>
+            </div>
+        </header>
+        <br />
+        <!-- Content -->
+        <div class="w3-padding">
+            <!-- Sidebar -->
+            <div class="w3-col s4 w3-hide-small">
+                <br /><a href="#about_me" class="side-item w3-bar-item w3-block w3-button w3-text-purple" style="text-align: left"><h5><b>About Me</b></h5></a><br />
+                <a href="#education" class="sb-item w3-bar-item w3-block w3-button w3-text-purple" style="text-align: left"><h5><b>Education</b></h5></a><br />
+                <a href="#work_experience" class="sb-item w3-bar-item w3-block w3-button w3-text-purple" style="text-align: left"><h5><b>Work
+                    Experience</b></h5></a><br />
+                <a href="#trainings_attended" class="sb-item w3-bar-item w3-block w3-button w3-text-purple" style="text-align: left"><h5><b>Trainings
+                    Attended</b></h5></a><br />
+                <a href="#previous_projects" class="sb-item w3-bar-item w3-block w3-button w3-text-purple" style="text-align: left"><h5><b>Previous
+                    Projects</b></h5></a><br />
+                <a href="#contact" class="sb-item w3-bar-item w3-block w3-button w3-text-purple" style="text-align: left"><h5><b>Contact</b></h5></a>
+            </div>
+            <!-- Info -->
+            <div class="w3-col s8">
+                <div class="w3-left w3-padding" style="border-left: 2px solid #DDD; min-height: 250px"> <!-- Divider -->
+                    <!-- About Me -->
+                    <h3 id="about_me" class="w3-text-deep-purple">About Me</h3>
+                    <p>An average IT girl who loves computers and gadgets. Also loves to tinker with different operating systems, learn new things and explore the world of software engineering for fun.</p>
+                    <ul style="list-style: none">
+                        <li><b>Date of birth:</b> 11 July, 1997</li>
+                        <li><b>Location:</b> Klang, Selangor</li>
+                    </ul>
+                    <br />
+                    <!-- Education -->
+                    <h3 id="education" class="w3-text-deep-purple">Education</h3>
+                    <ul>
+                        <li>
+                            <b>Undergraduate</b><br />
+                            2016 - 2019<br />
+                            <i>Diploma in Digital Technology (Information Security)</i><br />
+                            Politeknik Ungku Omar
+                        </li>
+                        <br />
+                        <li style="list-style: none">
+                            2020 - Present<br />
+                            <i>Bachelor of Science with Honours (Information Technology)</i><br />
+                            Universiti Utara Malaysia (UUM)
+                        </li>
+                    </ul>
+                    <br />
+                    <!-- Work Experience -->
+                    <h3 id="work_experience" class="w3-text-deep-purple">Work Experience</h3>
+                    <ul>
+                        <li>
+                            <b>Orchid Inc.</b> (2011 - 2013)<br />
+                            <i>Junior Web Developer</i><br />
+                            <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <br />
+                        <li>
+                            <b>Filevix Co.</b> (2013 - 2015)<br />
+                            <i>Database Administrator</i><br />
+                            <p style="color: grey">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </li>
+                    </ul>
+                    <br />
+                    <!-- Trainings Attended -->
+                    <h3 id="trainings_attended" class="w3-text-deep-purple">Trainings Attended</h3>
+                    <ol>
+                        <li>
+                            <b>Create Supreme!</b><br />
+                            Essentials for Software Development<br />
+                            <i>Inoxa Pvt. Ltd.</i><br />
+                            <span style="color:grey">October 2014</span>
+                            
+                        </li>
+                        <br />
+                        <li>
+                            <b>Beyond Touch</b><br />
+                            Algorithms and Data Structures<br />
+                            <i>Lapera Corp.</i><br />
+                            <span style="color:grey">July 2015</span>
+                            
+                        </li>
+                    </ol>
+                    <br />
+                    <!-- Previous Projects -->
+                    <h3 id="previous_projects" class="w3-text-deep-purple">Previous Projects</h3>
+                    <p><b>Poker Game Simulator</b>
+                        <ul>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</li>
+                            <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                        </ul>
+                    </p>
+                    <p><b>Fingerprint ATM System</b>
+                        <ul>
+                            <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</li>
+                            <li>Itaque earum rerum hic tenetur a sapiente delectus</li>
+                        </ul>
+                    </p>
+                    <br />
+                    <!-- Contact -->
+                    <h3 id="contact" class="w3-text-deep-purple">Contact</h3>
+                    <ul style="list-style: none">
+                        <li><b>Phone No.:</b> <span class="contact" title="Click Here to send a WhatsApp Message" onclick="sendWhatsAppMsg()">011-61751807</span></li>
+                        <li><b>E-mail:</b> <span class="contact" title="Click Here to Send an E-mail" onclick="sendEmail(); this.target='_blank'">deb.naz97@gmail.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-card w3-deep-purple w3-padding"
+        style="text-align: center; background-color: white; margin: 0px 100px">
+        &copy; Deborah Nazarena. 2022
+    </footer>
+    <button id="top" title="Back To Top" onclick="backToTop()">Top</button>
+</body>
+<script type="text/javascript">
+    // send WhatsApp message
+    function sendWhatsAppMsg() {
+        var link = "https://wa.me/601161751807";
+        window.open(link, '_blank');
+        return false;
+    }
+
+    // send E-mail
+    function sendEmail() {
+        var link = "mailto:deb.naz97@gmail.com";
+        window.location.href = link;
+        return false;
+    }
+
+    // show Back To Top button when page is scrolled down
+    var btn = document.getElementById("top");
+
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</html>
